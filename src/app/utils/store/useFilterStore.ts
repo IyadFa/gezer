@@ -23,7 +23,6 @@ export const useFilterStore = create<FilterState>((set) => ({
   setStatus: (status) => set({ status }),
   setGender: (gender) => set({ gender }),
   setPage: (page) => set({ page }),
-  /*************  ✨ Codeium Command ⭐  *************/
   /**
    * Initializes the filter state with the provided status, gender, and page values.
    * If the state is already initialized, it does nothing.
@@ -33,7 +32,6 @@ export const useFilterStore = create<FilterState>((set) => ({
    * @param {string} page - The page value to set.
    */
 
-  /******  dd0b5c44-d5b4-4418-9407-01ab8a749fc9  *******/
   initializeFilters: (status, gender, page) =>
     set((state) =>
       state.initialized ? {} : { status, gender, page, initialized: true }
